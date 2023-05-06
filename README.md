@@ -2,34 +2,14 @@
 
 Around 400 hours of course materials and projects. At the end of the course you should have a good grasp on:
 
-#### These programming Languages:
+| programming Languages   | Frameworks & libraries         | Databases      |
+| ----------------------- | ------------------------------ | -------------- |
+| JavaScript / TypeScript | React, Angular, NextJs, NodeJs | MongoDB, MySQL |
+| Python                  | Pands, NumPy, Flask            | SQL Lite       |
+| Go                      | Gin                            | PostgreSQL     |
+| Rust                    | WASM, Yew                      | MySQL          |
 
-- JavaScript / TypeScript
-- Python
-- Go
-- Rust
-
-#### These frameworks, libraries and services:
-
-- ReactJs
-- Angular
-- NextJs
-- NodeJs
-- Flask
-- Gin
-- Yew
-
-- Shopify
-- Stripe
-- Vercel
-- Planetscale
-
-#### These databases
-
-- MySQL
-- MongoDB
-- SQL Lite
-- PostgreSQL
+And other services like Vercel, Shopify, Planetscale, and Linode.
 
 ## These are the courses
 
