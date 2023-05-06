@@ -2,7 +2,7 @@
 
 Around 400 hours of course materials and projects. At the end of the course you should have a good grasp on:
 
-| programming Languages   | Frameworks & libraries         | Databases      |
+| Programming Languages   | Frameworks & Libraries         | Databases      |
 | ----------------------- | ------------------------------ | -------------- |
 | JavaScript / TypeScript | React, Angular, NextJs, NodeJs | MongoDB, MySQL |
 | Python                  | Pands, NumPy, Flask            | SQL Lite       |
