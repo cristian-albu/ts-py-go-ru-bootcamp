@@ -108,6 +108,8 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 
 Build a full stack e-commerce app with each tech stack. Use each the advantages of each technology. 225 hours of practice.
 
+Not every technology was covered for these projects but the challenge includes adapting and learning from the docs directly without spending too much time on courses. For example you will need to learn VueJs, Django, and Rocket on the fly.
+
 #### App requirements:
 
 - Product page with pagination.
