@@ -1,6 +1,6 @@
 # 🚀 Typescript, Python, Go, and Rust bootcamp
 
-Around 525 hours of course materials and projects. At the end of the course you should have a good grasp on:
+Around 545 hours of course materials and projects. At the end of the course you should have a good grasp on:
 
 | Programming Languages   | Frameworks & Libraries              | Databases & ORMs       |
 | ----------------------- | ----------------------------------- | ---------------------- |
@@ -34,7 +34,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 
 ## Learning schedule
 
-300 total hours of theory and practice.
+320 total hours of theory and practice.
 
 | Item                                     | Topic                   | Hours | Status |
 | ---------------------------------------- | ----------------------- | ----- | ------ |
@@ -57,7 +57,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | User authentication & authorization      | 🛠️ MEAN Stack Course    | 3     |        |
 | Error handling and optimization          | 🛠️ MEAN Stack Course    | 2     |        |
 | FreeCodeCamp NodeJs practice             | 🎲 NodeJs practice      | 8     |        |
-| JS data structures & algos               | 📐 Algo. & Data Struc.  | 12    |        |
+| JS data structures & algos               | 📐 Algo. & Data Struc.  | 32    |        |
 | Beginner Python (Day 1-14)               | 🐍 Python course        | 8     |        |
 | Intermediate Python (Day 15-40)          | 🐍 Python course        | 20    |        |
 | Basic web with Python (Day 41-53)        | 🐍 Python course        | 10    |        |
