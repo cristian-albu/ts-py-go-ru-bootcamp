@@ -32,7 +32,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 
 ## Learning schedule
 
-270 total hours of theory and practice.
+275 total hours of theory and practice.
 
 | Item                                     | Topic                   | Hours | Status |
 | ---------------------------------------- | ----------------------- | ----- | ------ |
@@ -43,7 +43,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | The DOM                                  | 🌐 Web Dev Bootcamp     | 3     |        |
 | Async JavaScript & AJAX                  | 🌐 Web Dev Bootcamp     | 3     |        |
 | Prototypes, classes & OOP                | 🌐 Web Dev Bootcamp     | 2     |        |
-| FreeCodeCamp JS practice                 | ⚠️ JavaScript practice  | 16    |        |
+| FreeCodeCamp JS practice                 | ⚠️ JavaScript practice  | 10    |        |
 | Angular Frontend basics                  | 🛠️ MEAN Stack Course    | 3     |        |
 | NodeJs                                   | 🌐 Web Dev Bootcamp     | 6     |        |
 | MongoDB                                  | 🌐 Web Dev Bootcamp     | 4     |        |
@@ -54,9 +54,9 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | Image uploads & pagination               | 🛠️ MEAN Stack Course    | 2     |        |
 | User authentication & authorization      | 🛠️ MEAN Stack Course    | 3     |        |
 | Error handling and optimization          | 🛠️ MEAN Stack Course    | 2     |        |
-| FreeCodeCamp NodeJs practice             | 🎲 NodeJs practice      | 10    |        |
-| JS data structures & algos               | 📐 Algo. & Data Struc.  | 16    |        |
-| Beginner Python (Day 1-14)               | 🐍 Python course        | 10    |        |
+| FreeCodeCamp NodeJs practice             | 🎲 NodeJs practice      | 8     |        |
+| JS data structures & algos               | 📐 Algo. & Data Struc.  | 12    |        |
+| Beginner Python (Day 1-14)               | 🐍 Python course        | 8     |        |
 | Intermediate Python (Day 15-40)          | 🐍 Python course        | 20    |        |
 | Basic web with Python (Day 41-53)        | 🐍 Python course        | 10    |        |
 | Python & Flask (Day 54-69)               | 🐍 Python course        | 15    |        |
@@ -98,13 +98,13 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | ConcurrencyText process, file, directory | 🦀 Rust Course          | 2     |        |
 | Blockchain in rust                       | 🦀 Rust Course          | 2     |        |
 | Web & measurements                       | 🦀 Rust Course          | 2     |        |
-| Yew                                      | 🦀 Rust                 | 6     |        |
-| Rocket                                   | 🦀 Rust                 | 6     |        |
+| Yew                                      | 🦀 Rust                 | 5     |        |
+| Rocket                                   | 🦀 Rust                 | 5     |        |
 | Rust data structures & algos             | 📐 Algo. & Data Struc.  | 8     |        |
 
 ## Final project
 
-Build a full stack e-commerce app with each tech stack. Use each the advantages of each technology. 230 hours of practice.
+Build a full stack e-commerce app with each tech stack. Use each the advantages of each technology. 225 hours of practice.
 
 #### App requirements:
 
@@ -120,9 +120,9 @@ Build a full stack e-commerce app with each tech stack. Use each the advantages 
 
 All apps will use the same database.
 
-| Item                            | Stack          | Hours | Status |
+| Project                         | Stack          | Hours | Status |
 | ------------------------------- | -------------- | ----- | ------ |
-| Ecom site with JS ecosystem     | React + NodeJs | 40    |        |
+| Ecom site with JS ecosystem     | React + NodeJs | 35    |        |
 | Ecom site with Python ecosystem | VueJs + Django | 60    |        |
 | Ecom site with Go ecosystem     | Angular + Gin  | 60    |        |
 | Ecom site with Rust ecosystem   | Yew + Rocket   | 70    |        |
