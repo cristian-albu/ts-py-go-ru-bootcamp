@@ -2,14 +2,12 @@
 
 Around 470 hours of course materials and projects. At the end of the course you should have a good grasp on:
 
-| Programming Languages   | Frameworks & Libraries         | Databases      |
-| ----------------------- | ------------------------------ | -------------- |
-| JavaScript / TypeScript | React, Angular, NextJs, NodeJs | MongoDB, MySQL |
-| Python                  | Pandas, NumPy, Flask           | SQL Lite       |
-| Go                      | Gin                            | PostgreSQL     |
-| Rust                    | WASM, Yew                      | MySQL          |
-
-And other services like Vercel, Shopify, Planetscale, and Linode.
+| Programming Languages   | Frameworks & Libraries              | Databases & ORMs       |
+| ----------------------- | ----------------------------------- | ---------------------- |
+| JavaScript / TypeScript | React, NodeJs, NextJs, Angular, Vue | MongoDB, MySQL, Prisma |
+| Python                  | Flask, Django, NumPy, Pandas        | SQL Lite               |
+| Go                      | Gin                                 | PostgreSQL             |
+| Rust                    | Yew, Rocket                         | MySQL, Diesel          |
 
 ## These are the courses
 
@@ -106,7 +104,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 
 ## Final project
 
-Build a full stack e-commerce app with each tech stack. Use each the advantages of each technology. 200 hours of practice.
+Build a full stack e-commerce app with each tech stack. Use each the advantages of each technology. 230 hours of practice.
 
 #### App requirements:
 
@@ -122,12 +120,12 @@ Build a full stack e-commerce app with each tech stack. Use each the advantages 
 
 All apps will use the same database.
 
-| Item                            | Stack           | Hours | Status |
-| ------------------------------- | --------------- | ----- | ------ |
-| Ecom site with JS ecosystem     | NextJs + NodeJs | 50    |        |
-| Ecom site with Python ecosystem | React + Flask   | 50    |        |
-| Ecom site with Go ecosystem     | Angular + Gin   | 50    |        |
-| Ecom site with Rust ecosystem   | Yew + Rocket    | 50    |        |
+| Item                            | Stack          | Hours | Status |
+| ------------------------------- | -------------- | ----- | ------ |
+| Ecom site with JS ecosystem     | React + NodeJs | 40    |        |
+| Ecom site with Python ecosystem | VueJs + Django | 60    |        |
+| Ecom site with Go ecosystem     | Angular + Gin  | 60    |        |
+| Ecom site with Rust ecosystem   | Yew + Rocket   | 70    |        |
 
 Deployment for each app will be on a server with the same capabilities for all apps. Each app will be in a docker container.
 
