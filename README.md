@@ -1,6 +1,6 @@
 # 🚀 Typescript, Python, Go, and Rust bootcamp
 
-Around 470 hours of course materials and projects. At the end of the course you should have a good grasp on:
+Around 525 hours of course materials and projects. At the end of the course you should have a good grasp on:
 
 | Programming Languages   | Frameworks & Libraries              | Databases & ORMs       |
 | ----------------------- | ----------------------------------- | ---------------------- |
@@ -25,14 +25,16 @@ Around 470 hours of course materials and projects. At the end of the course you 
 - [⚛️ React Testing Course](https://www.youtube.com/watch?v=OVNjsIto9xM&t=271s)
 - [🛒 NextJs & Shopify 📜](https://www.udemy.com/course/next-js-typescript-with-shopify-integration-full-guide/learn/lecture/27406694#content)
 - [🦦 Go Course 📜](https://www.udemy.com/course/building-modern-web-applications-with-go/)
+- [🦦 Go Gin Course](https://www.youtube.com/watch?v=oiPdFkMZ58Q&list=PLDZ_9qD1hkzMdre6oedUdyDTgoJYq-_AY)
 - [🦀 Rust Course 📜](https://www.udemy.com/course/rust-programming-master-class-from-beginner-to-expert/)
+- [🦀 Rust Yew Course](https://www.youtube.com/watch?v=5PB9UDOIuGk&list=PLrmY5pVcnuE_R5qJ0o30eGw77bWmnrUtL)
 - [📐 Algo. & Data Struc.](https://neetcode.io/roadmap)
 
 Whenver you start a new technology, you can check out [100 seconds of Code](https://www.youtube.com/watch?v=DC471a9qrU4&list=PL0vfts4VzfNiI1BsIK5u7LpPaIDKMJIDN) to uderstand it better while also glancing over the official docs. When learning data structures and algorithms, you should start by understand the language agnostic theory, then understand language specific theory and then do the leetcode problems from the roadmap. For each language you should solve the same algos and data structure problems so you can enforce the knowledge from a different perspective. Along the way you should pick up some linux, bash, git, and docker.
 
 ## Learning schedule
 
-275 total hours of theory and practice.
+300 total hours of theory and practice.
 
 | Item                                     | Topic                   | Hours | Status |
 | ---------------------------------------- | ----------------------- | ----- | ------ |
@@ -74,7 +76,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | React Hooks                              | ⚛️ React Course         | 3     |        |
 | React Testing                            | ⚛️ React Testing Course | 2     |        |
 | Typescript                               | 🛒 NextJs & Shopify     | 7     |        |
-| Project                                  | 🛒 NextJs & Shopify     | 14    |        |
+| Project                                  | 🛒 NextJs & Shopify     | 13    |        |
 | Optimization and delployment             | 🛒 NextJs & Shopify     | 6     |        |
 | Go overviewhttps                         | 🦦 Go Course            | 3     |        |
 | Go web app                               | 🦦 Go Course            | 3     |        |
@@ -86,7 +88,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | Go mail and auth                         | 🦦 Go Course            | 2     |        |
 | Go secure back end admin                 | 🦦 Go Course            | 5     |        |
 | Go app update and optimization           | 🦦 Go Course            | 1     |        |
-| Gin                                      | 🦦 Go Course            | 6     |        |
+| Gin                                      | 🦦 Go Gin Course        | 3     |        |
 | GO data structures & algos               | 📐 Algo. & Data Struc.  | 8     |        |
 | Rust basics & ownership                  | 🦀 Rust Course          | 4     |        |
 | Rust control structure and project       | 🦀 Rust Course          | 2     |        |
@@ -98,7 +100,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | ConcurrencyText process, file, directory | 🦀 Rust Course          | 2     |        |
 | Blockchain in rust                       | 🦀 Rust Course          | 2     |        |
 | Web & measurements                       | 🦀 Rust Course          | 2     |        |
-| Yew                                      | 🦀 Rust                 | 5     |        |
+| Yew                                      | 🦀 Rust Yew Course      | 30    |        |
 | Rocket                                   | 🦀 Rust                 | 5     |        |
 | Rust data structures & algos             | 📐 Algo. & Data Struc.  | 8     |        |
 
