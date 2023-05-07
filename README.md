@@ -1,6 +1,6 @@
 # 🚀 Typescript, Python, Go, and Rust bootcamp
 
-Around 440 hours of course materials and projects. At the end of the course you should have a good grasp on:
+Around 470 hours of course materials and projects. At the end of the course you should have a good grasp on:
 
 | Programming Languages   | Frameworks & Libraries         | Databases      |
 | ----------------------- | ------------------------------ | -------------- |
@@ -30,11 +30,11 @@ And other services like Vercel, Shopify, Planetscale, and Linode.
 - [🦀 Rust Course 📜](https://www.udemy.com/course/rust-programming-master-class-from-beginner-to-expert/)
 - [📐 Algo. & Data Struc.](https://neetcode.io/roadmap)
 
-Whenver you start a new technology, you can check out [100 seconds of Code](https://www.youtube.com/watch?v=DC471a9qrU4&list=PL0vfts4VzfNiI1BsIK5u7LpPaIDKMJIDN) to uderstand it better while also glancing over the official docs. When learning data structures and algorithms, you should start by understand the language agnostic theory, then understand language specific theory and then do the leetcode problems from the roadmap. For each language you should solve the same algos and data structure problems so you can enforce the knowledge from a different perspective. Along the way you should pick up some linux, bash, and git.
+Whenver you start a new technology, you can check out [100 seconds of Code](https://www.youtube.com/watch?v=DC471a9qrU4&list=PL0vfts4VzfNiI1BsIK5u7LpPaIDKMJIDN) to uderstand it better while also glancing over the official docs. When learning data structures and algorithms, you should start by understand the language agnostic theory, then understand language specific theory and then do the leetcode problems from the roadmap. For each language you should solve the same algos and data structure problems so you can enforce the knowledge from a different perspective. Along the way you should pick up some linux, bash, git, and docker.
 
 ## Learning schedule
 
-240 total hours of theory and practice.
+270 total hours of theory and practice.
 
 | Item                                     | Topic                   | Hours | Status |
 | ---------------------------------------- | ----------------------- | ----- | ------ |
@@ -65,7 +65,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | Python data analysis (Day 70-80)         | 🐍 Python course        | 10    |        |
 | FreeCodeCamp Python scientific computing | 🐍 Python practice      | 10    |        |
 | FreeCodeCamp Python data analysis        | 🐍 Python practice 2    | 10    |        |
-| Python data structures & algos           | 📐 Algo. & Data Struc.  | 10    |        |
+| Python data structures & algos           | 📐 Algo. & Data Struc.  | 8     |        |
 | Python scripting projects                | 🐍 Python course        | 3     |        |
 | Python web projects                      | 🐍 Python course        | 3     |        |
 | Python GUI projects                      | 🐍 Python course        | 3     |        |
@@ -89,7 +89,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | Go secure back end admin                 | 🦦 Go Course            | 5     |        |
 | Go app update and optimization           | 🦦 Go Course            | 1     |        |
 | Gin                                      | 🦦 Go Course            | 6     |        |
-| GO data structures & algos               | 📐 Algo. & Data Struc.  | 10    |        |
+| GO data structures & algos               | 📐 Algo. & Data Struc.  | 8     |        |
 | Rust basics & ownership                  | 🦀 Rust Course          | 4     |        |
 | Rust control structure and project       | 🦀 Rust Course          | 2     |        |
 | Structures, traists, generics, enums     | 🦀 Rust Course          | 2     |        |
@@ -100,8 +100,9 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | ConcurrencyText process, file, directory | 🦀 Rust Course          | 2     |        |
 | Blockchain in rust                       | 🦀 Rust Course          | 2     |        |
 | Web & measurements                       | 🦀 Rust Course          | 2     |        |
-| Yew                                      | 🦀 Rust Course          | 4     |        |
-| Rust data structures & algos             | 📐 Algo. & Data Struc.  | 10    |        |
+| Yew                                      | 🦀 Rust                 | 6     |        |
+| Rocket                                   | 🦀 Rust                 | 6     |        |
+| Rust data structures & algos             | 📐 Algo. & Data Struc.  | 8     |        |
 
 ## Final project
 
