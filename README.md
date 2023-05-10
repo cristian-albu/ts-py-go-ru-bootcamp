@@ -40,7 +40,7 @@ Whenver you start a new technology, you can check out [100 seconds of Code](http
 | ---------------------------------------- | ----------------------- | ----- | ------ |
 | HTML (Sections 1-5)                      | 🌐 Web Dev Bootcamp     | 5     | ✅     |
 | CSS (Sections 6-13)                      | 🌐 Web Dev Bootcamp     | 6     | ✅     |
-| Basic JavaScript                         | 🌐 Web Dev Bootcamp     | 10    |        |
+| Basic JavaScript                         | 🌐 Web Dev Bootcamp     | 10    | ✅     |
 | The DOM                                  | 🌐 Web Dev Bootcamp     | 3     |        |
 | Async JavaScript & AJAX                  | 🌐 Web Dev Bootcamp     | 3     |        |
 | Prototypes, classes & OOP                | 🌐 Web Dev Bootcamp     | 2     |        |
