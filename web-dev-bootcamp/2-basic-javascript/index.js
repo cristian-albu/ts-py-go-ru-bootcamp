@@ -232,6 +232,52 @@ function scopeFunction() {
 
 let getInnverValue = scopeFunction(); // "This is the inner scope"
 
+// Object with functions aka object methods
+
+const objWithFunc = {
+  func: () => "I'm a function",
+};
+
+console.log(objWithFunc.func()); // I'm a function
+
+const objWithFunction = {
+  objVal: "object val",
+  func: function () {
+    return `returned ${this.objVal}`;
+  },
+};
+
+console.log(objWithFunction.func()); // returned object val
+
+// return a function
+
+// factory function
+function isBetween(min, max) {
+  return function (num) {
+    return num > min && num < max;
+  };
+}
+
+const between15and25 = isBetween(15, 25);
+console.log(between15and25(17)); // true
+
+const between10and100 = isBetween(10, 100);
+console.log(between10and100(7)); // false
+
+// Callbacks: these are function that are will be invoked later
+
+function sayHello(name) {
+  return "Hello " + name;
+}
+
+function callbackfunc(callback, personName) {
+  const name = "Mr. " + personName;
+  return callback(name);
+}
+
+const exampleCallback = callbackfunc(sayHello, "Cristian");
+console.log(exampleCallback); // Hello Mr. Cristian
+
 // Higher order functions (functions as arguments)
 
 function argFunction() {
@@ -255,23 +301,6 @@ function recursiveFunction(arg) {
 }
 
 recursiveFunction(0);
-
-// Object with functions
-
-const objWithFunc = {
-  func: () => "I'm a function",
-};
-
-console.log(objWithFunc.func()); // I'm a function
-
-const objWithFunction = {
-  objVal: "object val",
-  func: function () {
-    return `returned ${this.objVal}`;
-  },
-};
-
-console.log(objWithFunction.func()); // returned object val
 
 // --------------- LOOPS -------------------
 
@@ -315,11 +344,24 @@ for (val of Object.entries(iterableObject)) {
 }
 
 // --------- OBJECT METHODS-----------
+// Most of these you will notice use callback arrow functions (e) => e
 
 // map() iterates over an array and makes a new array. Also works on strings
 const myArrCopy = myArr.map((e) => e);
 myArrCopy.pop();
 console.log(myArr, myArrCopy); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// Equivalent of map() in a more traditional way
+const myMap = (array) => {
+  const outputArray = [];
+  for (let i = 0; i < array.length; i++) {
+    outputArray.push(array[i]);
+  }
+  return outputArray;
+};
+
+const mappedArr = myMap(myArr);
+console.log(mappedArr); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // forEach iterates over just like map but does not return a new array. You can modifiy the original array if you specify the proper arguments
 
