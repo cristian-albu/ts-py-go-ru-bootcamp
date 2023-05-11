@@ -425,7 +425,7 @@ console.log(["Hello", "World", "and", "welcome"].join("-")); // Hello-World-and-
 // toString()
 console.log(["Hello", "World"].toString()); // Hello,World
 
-// SPREAD operator an array or object
+// SPREAD and REST operator an array or object
 
 const anArr = [1, 2, 3];
 const anArr2 = [4, 5, 6];
@@ -440,8 +440,18 @@ const anObj2 = {
   ...anObj,
   val3: "Text3",
 };
-
 console.log(anObj2); // {val: "Text", val2: "Text2", val3: "Text3"}
+
+function sum() {
+  // arguments is like an array of every argument passed to the function but it has not predefined methods like map or reduce..
+  // This is why you can use the rest operator to destructure it
+  const args = [...arguments];
+  return args.reduce((acc, e) => acc + e);
+}
+
+console.log(sum(1, 5, 6, 1, 2, 7, 2)); // 24
+
+// String methods
 
 const myString = "This is my String";
 
@@ -458,3 +468,22 @@ console.log(replaced); // THIS IS MY text
 const arrFromString = replaced.split(" ");
 
 console.log(arrFromString); // ['THIS', 'IS', 'MY', 'text']
+
+// Destructuring
+
+const strucObject = {
+  myName: {
+    firstName: "Cristian",
+    lastName: "Albu",
+  },
+  birthday: [2, 5, 1995],
+};
+
+const { myName, birthday } = strucObject;
+console.log(myName); //{firstName: "Cristian", astName: "Albu"}
+
+console.log(birthday); // [2, 5, 1995]
+
+const [theDay, theMonth, theYear] = birthday;
+
+console.log(theDay, theMonth, theYear); // 2 5 1995
