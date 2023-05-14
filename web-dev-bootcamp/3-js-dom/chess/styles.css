@@ -7,7 +7,8 @@
 }
 
 #board {
-  height: 70%;
+  width: 80vh;
+  max-width: 95%;
   aspect-ratio: 1/1;
   background-color: gray;
   display: flex;
@@ -35,37 +36,6 @@
   color: rgba(0, 0, 0, 0.4);
 }
 
-.blackPiece,
-.whitePiece {
-  font-size: 5px;
-  width: 100%;
-  height: 100%;
-  background: no-repeat center;
-  outline: 0px solid black;
-  border: none;
-  transition: all 0.2s;
-  cursor: pointer;
-  background-color: transparent;
-  background-size: contain;
-}
-
-.whitePiece:hover {
-  background-color: orange;
-}
-.blackPiece:hover {
-  background-color: orange;
-}
-
-.blackPiece:focus {
-  z-index: 99;
-  outline: 2px solid blue;
-}
-
-.whitePiece:focus {
-  z-index: 99;
-  outline: 2px solid blue;
-}
-
 .current {
   background-color: red;
 }
@@ -83,40 +53,24 @@
   cursor: pointer;
 }
 
-.blackPiece.king {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f0/Chess_kdt45.svg");
-}
-.blackPiece.queen {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/47/Chess_qdt45.svg");
-}
-.blackPiece.rook {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/ff/Chess_rdt45.svg");
-}
-.blackPiece.knight {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/ef/Chess_ndt45.svg");
-}
-.blackPiece.bishop {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/98/Chess_bdt45.svg");
-}
-.blackPiece.pawn {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pdt45.svg");
+.piece {
+  font-size: 5px;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center;
+  outline: 0px solid black;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+  background-color: transparent;
+  background-size: contain;
 }
 
-.whitePiece.king {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/42/Chess_klt45.svg");
+.piece:hover {
+  background-color: orange;
 }
-.whitePiece.queen {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/15/Chess_qlt45.svg");
-}
-.whitePiece.rook {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/72/Chess_rlt45.svg");
-}
-.whitePiece.knight {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/70/Chess_nlt45.svg");
-}
-.whitePiece.bishop {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/Chess_blt45.svg");
-}
-.whitePiece.pawn {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/45/Chess_plt45.svg");
+
+.piece:focus {
+  z-index: 99;
+  outline: 2px solid blue;
 }
