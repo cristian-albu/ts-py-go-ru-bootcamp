@@ -195,20 +195,28 @@ function knightView(color, position) {
  * @returns {[number[], number[]]}
  */
 function rookView(color, position) {
-  const canMoveTo = [];
-  const canCapture = [];
-  return [canMoveTo, canCapture];
-}
+  if (color !== "white" && color !== "black") {
+    console.log("Color must be white | black");
+  }
 
-/**
- * Builds a list of what a queen can view and a list for what a queen can capture
- * @param {"black" | "white"} color
- * @param {number} position
- * @returns {[number[], number[]]}
- */
-function queenView(color, position) {
   const canMoveTo = [];
   const canCapture = [];
+
+  // up and down
+  for (let i = 8; i <= 64; i += 8) {
+    if (fitsInterval(position - i)) canMoveTo.push(position - i);
+    if (fitsInterval(position + i)) canMoveTo.push(position + i);
+  }
+  // left
+  for (let i = 1; i <= position % 8; i++) {
+    if (fitsInterval(position - i)) canMoveTo.push(position - i);
+  }
+
+  // right
+  for (let i = 1; i < 8 - (position % 8); i++) {
+    if (fitsInterval(position + i)) canMoveTo.push(position + i);
+  }
+
   return [canMoveTo, canCapture];
 }
 
@@ -219,8 +227,47 @@ function queenView(color, position) {
  * @returns {[number[], number[]]}
  */
 function kingView(color, position) {
+  if (color !== "white" && color !== "black") {
+    console.log("Color must be white | black");
+  }
+
   const canMoveTo = [];
   const canCapture = [];
+
+  const stepsLeft = position % 8;
+
+  if (position > 7) canMoveTo.push(position - 8);
+  if (position > 7 && stepsLeft > 0) canMoveTo.push(position - 9);
+  if (stepsLeft > 0) canMoveTo.push(position - 1);
+  if (position < 57 && stepsLeft - 1 > 0) canMoveTo.push(position + 7);
+  if (position < 57) canMoveTo.push(position + 8);
+  if (position < 57 && 8 - stepsLeft - 1 > 0) canMoveTo.push(position + 9);
+  if (8 - stepsLeft - 1 > 0) canMoveTo.push(position + 1);
+  if (8 - stepsLeft - 1 > 0 && position > 7) canMoveTo.push(position - 7);
+
+  return [canMoveTo, canCapture];
+}
+
+/**
+ * Builds a list of what a queen can view and a list for what a queen can capture
+ * @param {"black" | "white"} color
+ * @param {number} position
+ * @returns {[number[], number[]]}
+ */
+function queenView(color, position) {
+  if (color !== "white" && color !== "black") {
+    console.log("Color must be white | black");
+  }
+
+  const canMoveTo = [
+    ...new Set([
+      ...bishopView("white", position)[0],
+      ...rookView("white", position)[0],
+      ...kingView("white", position)[0],
+    ]),
+  ];
+  const canCapture = [];
+
   return [canMoveTo, canCapture];
 }
 
@@ -263,7 +310,7 @@ function initializePieces(i) {
         `${p}Queen`,
         clr,
         i,
-        pawnView,
+        queenView,
         pieceImages[`${p}Queen`]
       );
     case i === 4:
@@ -271,7 +318,7 @@ function initializePieces(i) {
         `${p}King`,
         clr,
         i,
-        pawnView,
+        kingView,
         pieceImages[`${p}King`]
       );
     case i > 7 && i < 16:
@@ -319,7 +366,7 @@ function initializePieces(i) {
         `${p}King`,
         clr,
         i,
-        pawnView,
+        kingView,
         pieceImages[`${p}King`]
       );
     case i === 59:
@@ -327,7 +374,7 @@ function initializePieces(i) {
         `${p}Queen`,
         clr,
         i,
-        pawnView,
+        queenView,
         pieceImages[`${p}Queen`]
       );
     default:
