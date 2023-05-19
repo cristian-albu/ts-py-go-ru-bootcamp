@@ -119,7 +119,6 @@ function bishopView(color, position) {
     console.log("Color must be white | black");
   }
   const canMoveTo = [];
-  const canCapture = [];
 
   let stepsLeft = position % 8;
 
@@ -137,6 +136,7 @@ function bishopView(color, position) {
     if (fitsInterval(rDiagBtm)) canMoveTo.push(rDiagBtm);
   }
 
+  const canCapture = canMoveTo;
   return [canMoveTo, canCapture];
 }
 
@@ -151,8 +151,7 @@ function knightView(color, position) {
     console.log("Color must be white | black");
   }
   const canMoveTo = [];
-  const canCapture = [];
-  let stepsLeft = position % 8;
+  const stepsLeft = position % 8;
   const moveList = [];
 
   // top left
@@ -185,6 +184,7 @@ function knightView(color, position) {
     }
   });
 
+  const canCapture = canMoveTo;
   return [canMoveTo, canCapture];
 }
 
@@ -200,12 +200,18 @@ function rookView(color, position) {
   }
 
   const canMoveTo = [];
-  const canCapture = [];
 
   // up and down
-  for (let i = 8; i <= 64; i += 8) {
-    if (fitsInterval(position - i)) canMoveTo.push(position - i);
-    if (fitsInterval(position + i)) canMoveTo.push(position + i);
+  for (let i = position - 8; i >= 0; i -= 8) {
+    canMoveTo.push(i);
+  }
+
+  for (let i = position + 8; i <= 63; i += 8) {
+    if (document.getElementById(i) === null) {
+      canMoveTo.push(i);
+    } else {
+      return;
+    }
   }
   // left
   for (let i = 1; i <= position % 8; i++) {
@@ -216,7 +222,7 @@ function rookView(color, position) {
   for (let i = 1; i < 8 - (position % 8); i++) {
     if (fitsInterval(position + i)) canMoveTo.push(position + i);
   }
-
+  const canCapture = canMoveTo;
   return [canMoveTo, canCapture];
 }
 
@@ -232,7 +238,6 @@ function kingView(color, position) {
   }
 
   const canMoveTo = [];
-  const canCapture = [];
 
   const stepsLeft = position % 8;
 
@@ -245,6 +250,7 @@ function kingView(color, position) {
   if (8 - stepsLeft - 1 > 0) canMoveTo.push(position + 1);
   if (8 - stepsLeft - 1 > 0 && position > 7) canMoveTo.push(position - 7);
 
+  const canCapture = canMoveTo;
   return [canMoveTo, canCapture];
 }
 
@@ -266,7 +272,7 @@ function queenView(color, position) {
       ...kingView("white", position)[0],
     ]),
   ];
-  const canCapture = [];
+  const canCapture = canMoveTo;
 
   return [canMoveTo, canCapture];
 }
@@ -278,6 +284,8 @@ function queenView(color, position) {
  */
 function initializePieces(i) {
   let clr = i < 16 ? "black" : "white";
+
+  // Prefix
   let p = i < 16 ? "b" : "w";
 
   switch (true) {
@@ -460,8 +468,12 @@ function reRenderBoard() {
         e.child.color,
         Number(e.id)
       );
-      e.child.canCapture = canCapture;
+
+      console.table();
       e.child.canMoveTo = canMoveTo;
+      e.child.canCapture = canCapture.filter(
+        (view) => document.getElementById(view) !== null
+      );
 
       const currentPiece = document.createElement("button");
       currentPiece.setAttribute("id", e.child.name);
@@ -485,7 +497,7 @@ let currSelectedPieceSquare = null;
 let currentSelectableSquares = [];
 let currentCapturableSquare = [];
 
-boardElement.addEventListener("click", (event) => {
+function handleEvent(event) {
   const selectionIsPiece = isNaN(Number(event.target.id));
   const selectedSquareId = Number(
     selectionIsPiece ? event.target.parentElement.id : event.target.id
@@ -526,4 +538,6 @@ boardElement.addEventListener("click", (event) => {
     reRenderBoard();
     selectHistory = [];
   }
-});
+}
+
+boardElement.addEventListener("click", (event) => handleEvent(event));
